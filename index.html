@@ -17,7 +17,7 @@
     </div>
     <div class="content">
       <widget-component title="NFL Teams">
-        <table border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
+        <table slot="widget-content" border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
             <tr><!-- column headers -->
                 <th>Conference</th>
                 <th>Division</th>
@@ -185,9 +185,9 @@
             </tr>
         </table>
       </widget-component>
-      <div class="image-container">
-        <img src="images/afc-east.jpg" alt="AFC - East Logo" title="Logo for the AFC - East Division of the NFL" style="max-width:300px;max-height:360px;">
-      </div>
+      <widget-component title="AFC East Logo">
+        <img slot="widget-content" src="images/afc-east.jpg" alt="AFC - East Logo" title="Logo for the AFC - East Division of the NFL" style="max-width:300px;max-height:360px;">
+      </widget-component>
       <p><a href="http://www.nfl.com">Link to NFL.com</a></p>
     </div>
   </body>
