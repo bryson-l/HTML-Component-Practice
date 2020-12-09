@@ -32,10 +32,8 @@ class WidgetComponent extends HTMLElement {
         super();
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        let title = this.getAttribute('title')
-        this.shadowRoot.querySelector('h2').innerText = title
     }
-    connectedCallback() {
+    connectedCallback() {// need to get the attributes in the connectedCallback function because they may not be set when the constructor function runs
         let title = this.getAttribute('title')
         this.shadowRoot.querySelector('h2').innerText = title
     }
