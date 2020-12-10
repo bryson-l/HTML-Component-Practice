@@ -30,7 +30,7 @@ template.innerHTML = `<style>
 class WidgetComponent extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
+        this.attachShadow({mode: 'open'}); // add the component to the shadow DOM -> does not render until it is called
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {// need to get the attributes in the connectedCallback function because they may not be set when the constructor function runs

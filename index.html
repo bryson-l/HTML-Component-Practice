@@ -3,18 +3,13 @@
   <head>
     <title>About the NFL</title>
     <link rel="stylesheet" href="styles/project.css">
-    <script src="controls/widget/widget.js"></script>
+    <script src="controls/widget.js"></script>
+    <script src="controls/sidebar.js"></script>
+    <script src="controls/topbar.js"></script>
   </head>
   <body>
-    <div class="top-bar">
-      <h1>All About the NFL</h1>
-    </div>
-    <div class="side-bar">
-      <ul>
-        <li>NFC</li>
-        <li>AFC</li>
-      </ul>
-    </div>
+    <topbar-component></topbar-component>
+    <sidebar-component items='["AFC", "NFC"]'></sidebar-component>
     <div class="content">
       <widget-component title="NFL Teams">
         <table slot="widget-content" border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
