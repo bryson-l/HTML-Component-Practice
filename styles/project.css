@@ -13,6 +13,7 @@ img {
 
 html {
     font-family: sans-serif;
+    overflow-y: hidden;
 }
 
 .content {
@@ -51,4 +52,8 @@ p {
 
 .west {
     color: rgb(255, 176, 50);
+}
+
+.col {
+    display: block;
 }
