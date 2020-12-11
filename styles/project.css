@@ -23,3 +23,32 @@ html {
     margin-top: 15px;
     margin-left: 15px
 }
+
+.afc {
+    color: red;
+}
+p {
+    display: inline-block;
+    margin-block-start:1px;
+    margin-block-end:1px;
+}
+.nfc {
+    color: blue;
+}
+
+.north {
+    color: rgb(80, 167, 255);
+}
+
+.east {
+    color: rgb(126, 224, 102);
+    
+}
+
+.south {
+    color: rgb(125, 125, 125);
+}
+
+.west {
+    color: rgb(255, 176, 50);
+}

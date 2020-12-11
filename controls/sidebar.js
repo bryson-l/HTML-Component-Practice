@@ -15,11 +15,15 @@ sidebar.innerHTML = `<style>
                             margin-top:0;
                         }
 
-                        .side-bar > ul > li { /* styles the side bar elements to navigate to other pages */
+                        .side-bar > ul > a > li { /* styles the side bar elements to navigate to other pages */
                             border: 2px solid grey;
                             font-size: 25px;
                             margin-top: 0;
                             background: linear-gradient(90deg, rgba(74,67,218,1) 0%, rgba(20,20,119,1) 100%);
+                        }
+                        a {
+                            text-decoration: none;
+                            color: white;
                         }
                       </style>
                       <div class="side-bar">
@@ -41,7 +45,13 @@ class SidebarComponent extends HTMLElement {
     createListIndexHTML(stringArray) {
         let html = ""
         for (let index=0;index<JSON.parse(stringArray).length;index++) { // need to use JSON.parse because HTML attributes are passed as strings, not arrays
-            html += "<li>" + JSON.parse(stringArray)[index] + "</li>\n"
+            let item = JSON.parse(stringArray)[index]
+            if (item == "Home") {
+                html += "<a href='../index.html'><li>" + JSON.parse(stringArray)[index] + "</li>\n"
+            }
+            else {
+                html += "<a href='views/"+ item.toLowerCase() +".html'><li>" + JSON.parse(stringArray)[index] + "</li>\n"
+            }
         }
         return html
     }

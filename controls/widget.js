@@ -21,11 +21,11 @@ template.innerHTML = `<style>
                       }
                       </style>
                       <div class="widget-container">
-                        <h2 style="margin:5px 0 0 10px;">DEFAULT TEXT</h2>
+                        <h2 style="margin:5px 0 5px 10px;">DEFAULT TEXT</h2>
                         <div class="widget-content">
                             <slot name="widget-content">DEFUALT TEXT</slot>
                         </div>
-                      </div>`
+                      </div>` // the widget-content needs the flex attribute so that the widget will always have the white background taking up the full space
 
 class WidgetComponent extends HTMLElement {
     constructor() {

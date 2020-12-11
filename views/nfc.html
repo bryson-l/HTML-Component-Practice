@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About the NFL</title>
+    <link rel="stylesheet" href="../styles/project.css">
+    <script src="../controls/widget.js"></script>
+    <script src="../controls/sidebar.js"></script>
+    <script src="../controls/topbar.js"></script>
+  </head>
+  <body>
+    <topbar-component></topbar-component>
+    <sidebar-component items='["Home"]'></sidebar-component>
+    <div class="content">
+        <widget-component title="NFC Logo">
+            <div slot="widget-content">
+                <img src="../images/nfc.svg.png" alt="NFC Logo" title="Logo for the NFC" style="max-width:400px;max-height:400px;">
+            </div>
+        </widget-component>
+    </div>
+  </body>
+</html>

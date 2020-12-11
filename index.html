@@ -11,179 +11,188 @@
     <topbar-component></topbar-component>
     <sidebar-component items='["AFC", "NFC"]'></sidebar-component>
     <div class="content">
-      <widget-component title="NFL Teams">
-        <table slot="widget-content" border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
-            <tr><!-- column headers -->
-                <th>Conference</th>
-                <th>Division</th>
-                <th>Team</th>
-            </tr>
-            <tr><!-- start with the AFC East-->
-                <td>American Football Conference</td>
-                <td>AFC-East</td>
-                <td>Buffalo Bills</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-East</td>
-                <td>New England Patriots</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-East</td>
-                <td>New York Jets</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-East</td>
-                <td>Miami Dolphins</td>
-            </tr>
-            <tr><!-- now AFC South -->
-                <td>American Football Conference</td>
-                <td>AFC-South</td>
-                <td>Houston Texans</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-South</td>
-                <td>Indianapolis Colts</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-South</td>
-                <td>Jacksonville Jaguars</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-South</td>
-                <td>Tenessee Titans</td>
-            </tr>
-            <tr><!-- AFC West-->
-                <td>American Football Conference</td>
-                <td>AFC-West</td>
-                <td>Denver Broncos</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-West</td>
-                <td>Kansas City Chiefs</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-West</td>
-                <td>Las Vegas Raiders</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-West</td>
-                <td>Los Angeles Chargers</td>
-            </tr>
-            <tr><!-- AFC North -->
-                <td>American Football Conference</td>
-                <td>AFC-North</td>
-                <td>Baltimore Ravens</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-North</td>
-                <td>Cincinnati Bengals</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-North</td>
-                <td>Cleveland Browns</td>
-            </tr>
-            <tr>
-                <td>American Football Conference</td>
-                <td>AFC-North</td>
-                <td>Pittsburgh Steelers</td>
-            </tr>
-            <tr><!-- NFC East -->
-                <td>National Football Conference</td>
-                <td>NFC-East</td>
-                <td>Dallas Cowboys</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-East</td>
-                <td>New York Giants</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-East</td>
-                <td>Philadelphia Eagles</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-East</td>
-                <td>Washington Football Team</td>
-            </tr>
-            <tr><!-- NFC South -->
-                <td>National Football Conference</td>
-                <td>NFC-South</td>
-                <td>Atlanta Falcons</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-South</td>
-                <td>Carolina Panthers</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-South</td>
-                <td>New Orleans Saints</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-South</td>
-                <td>Tampa Bay Buccaneers</td>
-            </tr>
-            <tr><!-- NFC West -->
-                <td>National Football Conference</td>
-                <td>NFC-West</td>
-                <td>Arizona Cardinals</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-West</td>
-                <td>Los Angeles Rams</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-West</td>
-                <td>San Francisco 49ers</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-West</td>
-                <td>Seattle Seahawks</td>
-            </tr>
-            <tr><!-- NFC North-->
-                <td>National Football Conference</td>
-                <td>NFC-North</td>
-                <td>Chicago Bears</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-North</td>
-                <td>Detroit Lions</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-North</td>
-                <td>Green Bay Packers</td>
-            </tr>
-            <tr>
-                <td>National Football Conference</td>
-                <td>NFC-North</td>
-                <td>Minnesota Vikings</td>
-            </tr>
-        </table>
+      <widget-component title="NFL Teams" style="max-width: 640px;">
+        <div slot="widget-content">
+            <table border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
+                <tr><!-- column headers -->
+                    <th>Conference</th>
+                    <th>Division</th>
+                    <th>Team</th>
+                </tr>
+                <tr><!-- AFC North -->
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="north">-North</td>
+                    <td>Baltimore Ravens</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="north">-North</td>
+                    <td>Cincinnati Bengals</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="north">-North</td>
+                    <td>Cleveland Browns</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="north">-North</td>
+                    <td>Pittsburgh Steelers</td>
+                </tr>
+                <tr><!-- start with the AFC East-->
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="east">-East</td>
+                    <td>Buffalo Bills</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="east">-East</p></td>
+                    <td>New England Patriots</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="east">-East</td>
+                    <td>New York Jets</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="east">-East</td>
+                    <td>Miami Dolphins</td>
+                </tr>
+                <tr><!-- now AFC South -->
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="south">-South</td>
+                    <td>Houston Texans</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="south">-South</td>
+                    <td>Indianapolis Colts</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="south">-South</td>
+                    <td>Jacksonville Jaguars</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="south">-South</td>
+                    <td>Tenessee Titans</td>
+                </tr>
+                <tr><!-- AFC West-->
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="west">-West</td>
+                    <td>Denver Broncos</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="west">-West</td>
+                    <td>Kansas City Chiefs</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="west">-West</td>
+                    <td>Las Vegas Raiders</td>
+                </tr>
+                <tr>
+                    <td class="afc">American Football Conference</td>
+                    <td><p class="afc">AFC</p><p class="west">-West</td>
+                    <td>Los Angeles Chargers</td>
+                </tr>
+                
+                <tr><!-- NFC North-->
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="north">-North</td>
+                    <td>Chicago Bears</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="north">-North</td>
+                    <td>Detroit Lions</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="north">-North</td>
+                    <td>Green Bay Packers</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="north">-North</td>
+                    <td>Minnesota Vikings</td>
+                </tr>
+                <tr><!-- NFC East -->
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="east">-East</td>
+                    <td>Dallas Cowboys</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="east">-East</td>
+                    <td>New York Giants</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="east">-Eastt</td>
+                    <td>Philadelphia Eagles</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="east">-East</td>
+                    <td>Washington Football Team</td>
+                </tr>
+                <tr><!-- NFC South -->
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="south">-South</td>
+                    <td>Atlanta Falcons</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="south">-South</td>
+                    <td>Carolina Panthers</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="south">-South</td>
+                    <td>New Orleans Saints</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="south">-South</td>
+                    <td>Tampa Bay Buccaneers</td>
+                </tr>
+                <tr><!-- NFC West -->
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="west">-West</td>
+                    <td>Arizona Cardinals</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="west">-West</td>
+                    <td>Los Angeles Rams</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="west">-West</td>
+                    <td>San Francisco 49ers</td>
+                </tr>
+                <tr>
+                    <td class="nfc">National Football Conference</td>
+                    <td><p class="nfc">NFC</p><p class="west">-West</td>
+                    <td>Seattle Seahawks</td>
+                </tr>
+                
+            </table>
+            <p style="margin-top:5px;">The NFL is divided into 2 conferences, the American Football Conference and the
+            National Football Conference, which is then divided further into divisions in each conference.
+            Each conference is broken up into 4 divisions that are named with the 4 cardinal directions (i.e NFC East).</p>
+        </div>
       </widget-component>
-      <widget-component title="AFC East Logo">
-        <img slot="widget-content" src="images/afc-east.jpg" alt="AFC - East Logo" title="Logo for the AFC - East Division of the NFL" style="max-width:300px;max-height:360px;">
+      <widget-component title="NFL Logo" style="max-width:380px;">
+        <div slot="widget-content">
+            <img src="images/National_Football_League_logo.svg" alt="NFL Logo" title="Logo for the NFL">
+            <p><a href="http://www.nfl.com">Link to NFL.com</a></p>
+        </div>
       </widget-component>
-      <p><a href="http://www.nfl.com">Link to NFL.com</a></p>
     </div>
   </body>
 </html>	
