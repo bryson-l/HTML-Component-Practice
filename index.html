@@ -11,6 +11,54 @@
     <topbar-component></topbar-component>
     <sidebar-component items='["AFC", "NFC"]'></sidebar-component>
     <div class="content">
+      <div class="col">
+        <widget-component title="Favorite Team" style="max-width: 400px;display:block;">
+            <div slot="widget-content">
+                <label for="favoriteTeam">Choose Favorite Team:</label>
+                <select id="favoriteTeam" name="favoriteTeam">
+                    <option selected>Choose a team</option>
+                    <option value="Arizona Cardinals">Arizona Cardinals</option>
+                    <option value="Atlanta Falcons">Atlanta Falcons</option>
+                    <option value="Baltimore Ravens">Baltimore Ravens</option>
+                    <option value="Buffalo Bills">Buffalo Bills</option>
+                    <option value="Carolina Panthers">Carolina Panthers</option>
+                    <option value="Chicago Bears">Chicago Bears</option>
+                    <option value="Cincinnati Bengals">Cincinnati Bengals</option>
+                    <option value="Cleveland Browns">Cleveland Browns</option>
+                    <option value="Dallas Cowboys">Dallas Cowboys</option>
+                    <option value="Denver Broncos">Denver Broncos</option>
+                    <option value="Detroit Lions">Detroit Lions</option>
+                    <option value="Green Bay Packers">Green Bay Packers</option>
+                    <option value="Houston Texans">Houston Texans</option>
+                    <option value="Indianapolis Colts">Indianapolis Colts</option>
+                    <option value="Jacksonville Jaguars">Jacksonville Jaguars</option>
+                    <option value="Kansas City Chiefs">Kansas City Chiefs</option>
+                    <option value="Las Vegas Raiders">Las Vegas Raiders</option>
+                    <option value="Los Angeles Chargers">Los Angeles Chargers</option>
+                    <option value="Los Angeles Rams">Los Angeles Rams</option>
+                    <option value="Miami Dolphins">Miami Dolphins</option>
+                    <option value="Minnesota Vikings">Minnesota Vikings</option>
+                    <option value="New England Patriots">New England Patriots</option>
+                    <option value="New Orleans Saints">New Orleans Saints</option>
+                    <option value="New York Giants">New York Giants</option>
+                    <option value="New York Jets">New York Jets</option>
+                    <option value="Philadelphia Eagles">Philadelphia Eagles</option>
+                    <option value="Pittsburgh Steelers">Pittsburgh Steelers</option>
+                    <option value="San Francisco 49ers">San Francisco 49ers</option>
+                    <option value="Seattle Seahawks">Seattle Seahawks</option>
+                    <option value="Tampa Bay Buccaneers">Tampa Bay Buccaneers</option>
+                    <option value="Tennessee Titans">Tennessee Titans</option>
+                    <option value="Washington Football Team">Washington Football Team</option>
+                </select>
+            </div>
+        </widget-component>
+        <widget-component title="NFL Logo" style="max-width:400px;display:block;">
+            <div slot="widget-content">
+                <img src="images/National_Football_League_logo.svg" alt="NFL Logo" title="Logo for the NFL">
+                <p><a href="http://www.nfl.com">Link to NFL.com</a></p>
+            </div>
+        </widget-component>
+      </div>
       <widget-component title="NFL Teams" style="max-width: 640px;">
         <div slot="widget-content">
             <table border=1 frame=void rules=rows><!-- the frame and rules allow for cell borders-->
@@ -77,7 +125,7 @@
                 <tr>
                     <td class="afc">American Football Conference</td>
                     <td><p class="afc">AFC</p><p class="south">-South</td>
-                    <td>Tenessee Titans</td>
+                    <td>Tennessee Titans</td>
                 </tr>
                 <tr><!-- AFC West-->
                     <td class="afc">American Football Conference</td>
@@ -132,7 +180,7 @@
                 </tr>
                 <tr>
                     <td class="nfc">National Football Conference</td>
-                    <td><p class="nfc">NFC</p><p class="east">-Eastt</td>
+                    <td><p class="nfc">NFC</p><p class="east">-East</td>
                     <td>Philadelphia Eagles</td>
                 </tr>
                 <tr>
@@ -187,10 +235,9 @@
             Each conference is broken up into 4 divisions that are named with the 4 cardinal directions (i.e NFC East).</p>
         </div>
       </widget-component>
-      <widget-component title="NFL Logo" style="max-width:380px;">
+      <widget-component title="Sample Text" style="max-width:400px;">
         <div slot="widget-content">
-            <img src="images/National_Football_League_logo.svg" alt="NFL Logo" title="Logo for the NFL">
-            <p><a href="http://www.nfl.com">Link to NFL.com</a></p>
+            <img src="images\patriots.jpg" alt="Patriots Football" title="Football with the Patriots Logo" width="300" height="400">
         </div>
       </widget-component>
       <widget-component title="NFL News" style="max-width:500px;">
