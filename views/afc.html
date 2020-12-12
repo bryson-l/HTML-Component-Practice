@@ -11,11 +11,24 @@
     <topbar-component></topbar-component>
     <sidebar-component items='["Home"]'></sidebar-component>
     <div class="content">
-        <widget-component title="AFC Logo">
-            <div slot="widget-content">
-                <img src="../images/afc.svg.png" alt="AFC Logo" title="Logo for the AFC" style="max-width:400px;max-height:400px;">
-            </div>
-        </widget-component>
+      <widget-component title="About the AFC" style="max-width:400px;">
+        <div slot="widget-content">
+          <p>The AFC originally started out as the American Football League (AFL) which was a seperate football league in the 1960s.
+            It merged with the NFL and became the American Football Conference (AFC) in the year 1970. Three teams were placed into this
+            new conference, the Baltimore Colts, the Cleveland Browns, and the Pittsburgh Steelers.
+          </p>
+        </div>
+      </widget-component>
+      <widget-component title="AFC Logo">
+          <div slot="widget-content">
+              <img src="../images/afc.svg.png" alt="AFC Logo" title="Logo for the AFC" style="max-width:400px;max-height:400px;">
+          </div>
+      </widget-component>
+      <widget-component title="AFC Standings" style="max-width:350px;">
+        <div slot="widget-content">
+          <p><a href="https://www.espn.com/nfl/standings/_/group/conference">Link to current standings for the AFC</a></p>
+        </div>
+      </widget-component>
     </div>
   </body>
 </html>
